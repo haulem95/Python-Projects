@@ -1,3 +1,4 @@
+import math
 x = 10
 y = 5
 # basic operations
@@ -65,3 +66,25 @@ print(text[::-1])  # from the end to the start, step -1, reversing string
 
 
 # string formatting with .format()
+name = 'Alice'
+weight = 52
+msg = f"My name is {name} and I weigh {weight}kg."
+msg2 = 'My name is {} and I weigh {}kg'.format(name, weight)  # same as above
+print(msg)
+print(msg2)
+# using placeholders
+msg3 = 'My name is {0} and I weigh {1}kg. I like the name {0}, even though me being {1} kilos kinda bothers me.'.format(
+    name, weight)
+print(msg3)
+
+
+# maths module operations
+
+print(math.pi)
+print(math.sqrt(16))
+print(math.floor(4.7))
+print(math.ceil(5.3))
+print(math.pow(5, 3))
+
+pi = 3.141592654343
+print(round(pi, 2))  # round to 2 decimal places
